@@ -1,10 +1,23 @@
+// ignore_for_file: avoid_print
+
 import 'package:customized_widgets/theme_color.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'enum.dart';
 
+show(Object data) => kDebugMode
+    ? print(data.toString())
+    : print('----------------------Release Mode----------------------');
+
 class CustomLocalFunction {
+  static Future<void> push(BuildContext context,
+      {required Widget screen}) async {
+    await Navigator.push(
+        context, MaterialPageRoute(builder: (context) => screen));
+  }
+
   static TextStyle customTextStyle(
           {Color? color,
           double? spacing,
