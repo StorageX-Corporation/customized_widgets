@@ -16,7 +16,6 @@
 - text (mostly used)
 
 # Methods, Helpers, Utils and etc
-
 - printing on console 
  - usage: show('Hello World');
 - text styles
