@@ -3,8 +3,6 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../theme_color.dart';
-
 class CustomLoading extends StatelessWidget {
   const CustomLoading({
     Key? key,
@@ -22,11 +20,10 @@ class CustomLoading extends StatelessWidget {
               width: size,
               child: Center(
                   child: CircularProgressIndicator(
-                color: color ?? ThemeColors.PRIMARY_COLOR,
+                color: color,
               )),
             )
-          : CupertinoActivityIndicator(
-              color: color ?? ThemeColors.PRIMARY_COLOR),
+          : CupertinoActivityIndicator(color: color),
     );
   }
 }

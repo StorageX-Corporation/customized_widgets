@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../enum.dart';
-import '../theme_color.dart';
 import 'custom_text.dart';
 
 class CustomButtonFilled extends StatelessWidget {
@@ -37,7 +36,7 @@ class CustomButtonFilled extends StatelessWidget {
         width: width ?? double.infinity,
         padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 14),
         decoration: BoxDecoration(
-          color: color ?? ThemeColors.RED_COLOR,
+          color: color,
           borderRadius: BorderRadius.circular(radius ?? 30),
         ),
         child: child ??

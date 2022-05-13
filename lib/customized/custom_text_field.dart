@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../custom_local_function.dart';
-import '../theme_color.dart';
 
 class CustomTextField extends StatelessWidget {
   CustomTextField(
@@ -18,7 +17,7 @@ class CustomTextField extends StatelessWidget {
     this.maxLines,
     this.height,
     this.suffix,
-    this.color = ThemeColors.PRIMARY_COLOR,
+    this.color = Colors.black,
     this.onChanged,
   });
   final Widget? suffix;

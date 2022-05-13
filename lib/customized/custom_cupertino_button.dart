@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../theme_color.dart';
 import 'custom_text.dart';
 
 CupertinoButton customCupertinoButton(BuildContext context,
@@ -15,9 +14,7 @@ CupertinoButton customCupertinoButton(BuildContext context,
       child: CustomText(
         child.toUpperCase(),
         weight: FontWeight.bold,
-        color: redList.contains(child.toUpperCase())
-            ? Colors.red
-            : ThemeColors.IOS_BUTTON_COLOR,
+        color: redList.contains(child.toUpperCase()) ? Colors.red : Colors.blue,
       ),
       onPressed: onPressed as void Function()?);
 }

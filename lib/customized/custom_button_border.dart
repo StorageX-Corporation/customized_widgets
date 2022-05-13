@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../enum.dart';
-import '../theme_color.dart';
 import 'custom_text.dart';
 
 class CustomButtonFilledBorder extends StatelessWidget {
@@ -36,7 +35,7 @@ class CustomButtonFilledBorder extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(radius ?? 30),
             border: Border.all(
-              color: color ?? ThemeColors.PRIMARY_COLOR,
+              color: color ?? const Color(0xFF000000),
             )),
         child: child ??
             CustomText(
@@ -44,7 +43,7 @@ class CustomButtonFilledBorder extends StatelessWidget {
               textAlign: TextAlign.center,
               size: 14,
               type: FontType.FIRASANS,
-              color: text_color ?? ThemeColors.PRIMARY_COLOR,
+              color: text_color,
               weight: FontWeight.bold,
             ),
       ),

@@ -2,7 +2,6 @@ import 'package:customized_widgets/custom_local_function.dart';
 import 'package:flutter/material.dart';
 
 import '../enum.dart';
-import '../theme_color.dart';
 
 class CustomText extends StatelessWidget {
   final double size;
@@ -48,7 +47,7 @@ class CustomText extends StatelessWidget {
           textStyle: textStyle,
           spacing: spacing,
           style: style,
-          color: color ?? ThemeColors.PRIMARY_COLOR),
+          color: color),
     );
   }
 }

@@ -1,6 +1,5 @@
 // ignore_for_file: avoid_print
 
-import 'package:customized_widgets/theme_color.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -55,7 +54,7 @@ class CustomLocalFunction {
             height: spacing,
             fontStyle: style,
             decoration: underline,
-            color: color ?? ThemeColors.PRIMARY_COLOR);
+            color: color);
       case FontType.FIRASANS:
         return GoogleFonts.firaSans(
             letterSpacing: letterSpacing ?? 0,
@@ -65,7 +64,7 @@ class CustomLocalFunction {
             height: spacing,
             fontStyle: style,
             decoration: underline,
-            color: color ?? ThemeColors.PRIMARY_COLOR);
+            color: color);
       case FontType.ROBOTO:
         return GoogleFonts.roboto(
             letterSpacing: letterSpacing ?? 0,
@@ -75,7 +74,7 @@ class CustomLocalFunction {
             height: spacing,
             decoration: underline,
             fontStyle: style,
-            color: color ?? ThemeColors.PRIMARY_COLOR);
+            color: color);
         break;
 
       default:
@@ -87,7 +86,7 @@ class CustomLocalFunction {
             height: spacing,
             decoration: underline,
             fontStyle: style,
-            color: color ?? ThemeColors.PRIMARY_COLOR);
+            color: color);
         break;
     }
   }
