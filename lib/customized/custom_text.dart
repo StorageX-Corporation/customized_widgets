@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../enum.dart';
 
 class CustomText extends StatelessWidget {
-  final double size;
+  final double? size;
   final FontWeight? weight;
   final FontStyle? style;
   final Color? color;
@@ -18,7 +18,7 @@ class CustomText extends StatelessWidget {
   final TextStyle? textStyle;
   final FontType? type;
   const CustomText(this.text,
-      {this.size = 16,
+      {this.size,
       this.type,
       this.overflow,
       this.weight,
@@ -39,8 +39,7 @@ class CustomText extends StatelessWidget {
       maxLines: maxLines,
       textAlign: textAlign,
       softWrap: softWrap ?? true,
-      style: CustomLocalFunction.fontStyle(
-          type ?? (size < 25 ? type : FontType.FIRASANS),
+      style: CustomLocalFunction.fontStyle(type,
           letterSpacing: letterSpacing ?? 0,
           size: size,
           weight: weight,
